@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 9042668052569865196, guid: 4e20fb1566278744fb1af258454d1232,
         type: 3}
       propertyPath: m_Name
-      value: Robot_idle
+      value: Robot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e20fb1566278744fb1af258454d1232, type: 3}

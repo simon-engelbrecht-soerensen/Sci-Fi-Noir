@@ -347,34 +347,34 @@ Shader "Universal Render Pipeline/Custom/AScattering2"
 				// int steps = 100;
 				// int stepsShadows = 200;
 				// return ditherValue;
-				// while(distTravelled < _LightDistance)
-    //             {
-				// 	// rayDir+= _LightStepSize * (ditherValue*10000);
-    //
-				// 	// rayDir *= ditherValue;
-				// 	// wPos += ditherValue * 50;
-    //                 float3 rayPos = wPos + rayDir * distTravelled;
-    //                 // float3 rayPos2 = wPos + rayDir * distTravelled2 ;
-    //
-    //                 if(ShadowAtten(rayPos) > 0.01 &&  distTravelled < dist) 
-    //                 {
-    //
-    //                 	sunPow += (ComputeScattering(dot(rayDir, sunDir)));
-    //                 }					
-    //
-				// 	distTravelled += _LightStepSize ;
-    //
-				// 	 // float3 rayPos2 = wPos + rayDir * distTravelled2 ;
-    //
-    //  
-				//  	// if(ShadowAtten(rayPos2) < 0.01 &&  distTravelled2 < dist)
-				//  	// {
-				//  	// 	sunPow -= (ComputeScattering(dot(rayDir, sunDir))) * _VolumetricShadowPower;
-				//  	// }
-				// 	
-    //                 // distTravelled2 += shadowStepSize;
-    //                 
-    //             }
+				while(distTravelled < _LightDistance)
+                {
+					// rayDir+= _LightStepSize * (ditherValue*10000);
+
+					// rayDir *= ditherValue;
+					// wPos += ditherValue * 50;
+                    float3 rayPos = wPos + rayDir * distTravelled;
+                    // float3 rayPos2 = wPos + rayDir * distTravelled2 ;
+
+                    if(ShadowAtten(rayPos) > 0.01 &&  distTravelled < dist) 
+                    {
+
+                    	sunPow += (ComputeScattering(dot(rayDir, sunDir)));
+                    }					
+
+					distTravelled += _LightStepSize ;
+
+					 // float3 rayPos2 = wPos + rayDir * distTravelled2 ;
+
+     
+				 	// if(ShadowAtten(rayPos2) < 0.01 &&  distTravelled2 < dist)
+				 	// {
+				 	// 	sunPow -= (ComputeScattering(dot(rayDir, sunDir))) * _VolumetricShadowPower;
+				 	// }
+					
+                    // distTravelled2 += shadowStepSize;
+                    
+                }
 				
 				// while(distTravelled2 < _ShadowSteps )
     //             {
@@ -389,10 +389,10 @@ Shader "Universal Render Pipeline/Custom/AScattering2"
     //                 distTravelled2 += _ShadowStepSize;                    
     //             }
 				
-				//sunPow/= _LightDistance/_LightPower;
-				//sunPow = clamp(sunPow, 0, 99);
+				sunPow/= _LightDistance/_LightPower;
+				sunPow = clamp(sunPow, 0, 99);
 
-				inScatteredLight *=  (scatteringCoefficients) * stepSize;
+				inScatteredLight *=  (scatteringCoefficients + sunPow) * stepSize;
 				// inScatteredLight += blueNoise * 0.01;
             	return originalCol  * originalColTransmittance  + inScatteredLight;
             	

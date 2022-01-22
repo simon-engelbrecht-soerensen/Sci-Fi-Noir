@@ -1,6 +1,10 @@
 #ifndef CUSTOM_LIGHTING_INCLUDED
 #define CUSTOM_LIGHTING_INCLUDED
 
+#pragma multi_compile _ _MAIN_LIGHT_SHADOWS
+#pragma multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE
+#pragma multi_compile _ _SHADOWS_SOFT
+#pragma multi_compile _ _ADDITIONAL_LIGHTS
 // @Cyanilux | https://github.com/Cyanilux/URP_ShaderGraphCustomLighting
 
 //------------------------------------------------------------------------------------------------------

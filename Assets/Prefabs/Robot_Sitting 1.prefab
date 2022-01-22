@@ -1769,7 +1769,7 @@ GameObject:
   - component: {fileID: 8517945183210529110}
   - component: {fileID: 2366077379043834668}
   m_Layer: 0
-  m_Name: Robot_Dancer 3
+  m_Name: Robot_Sitting 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1802,7 +1802,7 @@ Animator:
   m_GameObject: {fileID: 9042668052569865196}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: decb6eb123284d043b75a1da40b466a9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 193cee77d06ad724186f2ad8b55272df, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2a35456586125e149b4fb9f3495dd2de, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

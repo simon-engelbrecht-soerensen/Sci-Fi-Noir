@@ -23,19 +23,19 @@ MonoBehaviour:
     destinationTextureId: _DestinationTexture
     opticalDepthCompute: {fileID: 0}
     textureSize: 256
-    inScatteringPoints: 10
-    opticalDepthPoints: 10
-    densityFalloff: 12
+    inScatteringPoints: 4
+    opticalDepthPoints: 4
+    densityFalloff: 12.15
     atmosphereHeight: 1.1
     planetLocation: {x: 0, y: -12720000, z: 0}
     planetSize: 6360000
     scatteringStrength: 2
     waveLengths: {x: 700, y: 530, z: 460}
-    lightPower: 3.74
-    lightScattering: 0.853
+    lightPower: 15.77
+    lightScattering: 0.798
     lightDistance: 130
-    lightStepSize: 1
-    depthDistance: 1813
+    lightStepSize: 20
+    depthDistance: 2303
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0

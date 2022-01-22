@@ -1,5 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5852813586196810578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36f8f0a214daef43b12b9f626fd4e6f, type: 3}
+  m_Name: AtmosphericScatteringFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 300
+    blitMaterial: {fileID: 2100000, guid: 85be4b2653820b249ab2578fcccb07dd, type: 2}
+    blitMaterialPassIndex: -1
+    sourceType: 0
+    destinationType: 0
+    sourceTextureId: _SourceTexture
+    destinationTextureId: _DestinationTexture
+    opticalDepthCompute: {fileID: 0}
+    textureSize: 256
+    inScatteringPoints: 10
+    opticalDepthPoints: 10
+    densityFalloff: 12
+    atmosphereHeight: 1.1
+    planetLocation: {x: 0, y: -12720000, z: 0}
+    planetSize: 6360000
+    scatteringStrength: 2
+    waveLengths: {x: 700, y: 530, z: 460}
+    lightPower: 3.74
+    lightScattering: 0.853
+    lightDistance: 130
+    lightStepSize: 1
+    depthDistance: 1813
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +76,8 @@ MonoBehaviour:
       type: 3}
   m_RendererFeatures:
   - {fileID: -1878332245247344467}
-  m_RendererFeatureMap: adc0de57c6d2eee5
+  - {fileID: -5852813586196810578}
+  m_RendererFeatureMap: adc0de57c6d2eee5aeb4288a0da1c6ae
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}

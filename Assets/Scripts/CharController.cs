@@ -34,6 +34,7 @@ public class CharController : MonoBehaviour
             {
                 Debug.Log("Move Character To:" + hit.point);
                 transform.DOMove(hit.point, 2);
+                transform.DOLookAt(hit.point, 0.2f);
             }
         }
     }

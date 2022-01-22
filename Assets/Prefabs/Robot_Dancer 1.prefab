@@ -1614,7 +1614,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d74ac6f40c4d84ed894b152e7c11ee00, type: 2}
+  - {fileID: 2100000, guid: 5e6f4bc455b738c4d89947b81504f839, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1769,7 +1769,7 @@ GameObject:
   - component: {fileID: 8517945183210529110}
   - component: {fileID: 2366077379043834668}
   m_Layer: 0
-  m_Name: Robot_Dancer01
+  m_Name: Robot_Dancer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
